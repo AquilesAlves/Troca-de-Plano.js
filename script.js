@@ -30,8 +30,16 @@ function calculaProporcional() {
     }
     let valorTotal = proporcionalAntigo + proporcionalNovo
 
+    resultado.style.borderRadius = "15px"
+    resultado.style.padding = "15px"
+    resultado.style.height = "170px"
+    resultado.style.width = "350px"
+
+
     resultado.innerHTML = `
-    ${proporcionalAntigo} ${proporcionalNovo} ${valorTotal}
+    <p><strong>Valor do plano antigo:</strong> R$${proporcionalAntigo}</p>
+    <p><strong>Valor do plano novo:</strong> R$${proporcionalNovo}</p>
+    <p><strong>Proporcional total da troca:</strong> R$${valorTotal}</p>
     `
 
 
