@@ -61,7 +61,15 @@ function calculaProporcional() {
         Proporcional de ${diasPlanoAntigo} dias do plano antigo ${proporcionalAntigo}
         e ${diasPlanoNovo} dias do plano novo R$${proporcionalNovo}
         Ciente do novo valor R$${valorNovo}
-        `
-        document.getElementById('copy2').style.display = 'block'
+    `
+    document.getElementById('copy2').style.display = 'block'
 
+}
+
+function copiar1() {
+    navigator.clipboard.writeText(document.getElementById('msg1').innerText)
+}
+
+function copiar2() {
+    navigator.clipboard.writeText(document.getElementById('msg2').innerText)
 }
