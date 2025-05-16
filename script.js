@@ -37,9 +37,9 @@ function calculaProporcional() {
 
 
     resultado.innerHTML = `
-    <p><strong>Valor do plano antigo:</strong> R$${proporcionalAntigo}</p>
-    <p><strong>Valor do plano novo:</strong> R$${proporcionalNovo}</p>
-    <p><strong>Proporcional total da troca:</strong> R$${valorTotal}</p>
+    <p><strong>Valor do plano antigo:</strong> R$${(proporcionalAntigo).toFixed(2).replace('.', ',')}</p>
+    <p><strong>Valor do plano novo:</strong> R$${(proporcionalNovo).toFixed(2).replace('.', ',')}</p>
+    <p><strong>Proporcional total da troca:</strong> R$${(valorTotal).toFixed(2).replace('.', ',')}</p>
     `
 
 
