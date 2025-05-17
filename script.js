@@ -4,7 +4,7 @@ function calculaProporcional() {
     let valorNovo = parseFloat(document.getElementById('valorNovo').value)
     const vencimento = parseInt(document.getElementById('vencimento').value)
     const dataTroca = parseInt(document.getElementById('dataTroca').value)
-    const msg1 = (document.getElementById('msg1'))
+    const msg1 = document.getElementById('msg1')
     const msg2 = document.getElementById('msg2')
 
     //valor diario de cada plano
@@ -58,7 +58,7 @@ function calculaProporcional() {
     msg2.style.width = "350px"
     msg2.innerHTML = `
         Cliente solicitou a troca do plano
-        Proporcional de ${diasPlanoAntigo} dias do plano antigo ${proporcionalAntigo}
+        Proporcional de ${diasPlanoAntigo} dias do plano antigo R$${proporcionalAntigo}
         e ${diasPlanoNovo} dias do plano novo R$${proporcionalNovo}
         Ciente do novo valor R$${valorNovo}
     `
